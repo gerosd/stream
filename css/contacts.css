@@ -1,0 +1,77 @@
+@import url("forAll.css");
+
+@keyframes slidein {
+    0% {
+        margin-left: 50%;
+    }
+
+    100% {
+        margin-left: 1.0938vw;
+    }
+}
+
+@keyframes slideincont {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 10.7813vw;
+    }
+}
+
+.header {
+    width: 100%;
+    margin-top: 1.0938vw;
+}
+
+.headliner {
+    color: var(--text-color-black);
+    margin-left: 1.0938vw;
+    font-size: clamp(20px, 2vw, 36px);
+    font-family: "Glutens", serif;
+    animation: slidein 1s;
+    transition: .2s;
+}
+
+.headliner:hover {
+    text-shadow: 3px 3px 10px #23201D;
+}
+
+.main {
+    display: flex;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    width: 44.271vw;
+    height: 29.9479vw;
+    margin: 10.7813vw auto 0 auto;
+    background: #627891;
+    border-radius: 1.3021vw;
+    animation: slideincont 1s;
+}
+
+.section {
+    margin-left: 3.229vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3.542vw;
+    font-size: clamp(10px, 2vw, 36px);
+}
+
+.img_wrap {
+    width: 3.3333vw;
+    height: 3.3333vw;
+}
+
+img {
+    width: 100%;
+}
+
+.section a {
+    transition: .2s;
+}
+
+.section a:hover {
+    text-shadow: 3px 3px #24201D;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>Twister | profile</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Twister</a>
+        <a href="tracked.html">Отслеживаемое</a>
+    </div>
+    <div class="main">
+        <div class="center">
+            <div class="photoLoader">
+                <input type="file" accept="image/*" class="photo">
+                <img src="" alt="">
+                <span>Upload a photo</span>
+            </div>
+            <div class="right">
+                <p class="name">Name</p>
+                <div class="description">
+                    <label>
+                        <textarea class="area" maxlength="180" placeholder="Напишите описание профиля (не более 180 символов)"></textarea>
+                    </label>
+                    <span class="countSymbols">0/180</span>
+                </div>
+            </div>
+            <button class="baton" onClick="saveDesc()">✔</button>
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 11vw">
+        <div class="footer_wrap">
+            <div class="footer_element">
+                <h2>Навигация по сайту</h2>
+                <a href="index.html">Главная</a>
+                <a href="login.html?login=false">Зарегистрироваться</a>
+                <a href="tracked.html">Отслеживаемое</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer_element">
+                <h2>Юридическая информация</h2>
+                <a href="https://www.twitch.tv/p/legal/community-guidelines">Правила сообщества</a>
+                <a href="https://www.twitch.tv/p/legal/privacy-policy">Политика конфиденциальности</a>
+                <a href="https://www.twitch.tv/p/partners">Партнеры</a>
+                <a href="https://twitchadvertising.tv/">Рекламодатели</a>
+            </div>
+        </div>
+        <div class="law">
+            <p>© 2025 Twister. Все права защищены.</p>
+        </div>
+        <img class="top" src="images/main/toTop.png" alt="toTop">
+    </div>
+</body>
+<script src="js/toTop.js"></script>
+<script src="js/getProfileInfo.js"></script>
+<script src="js/countSymbols.js"></script>
+</html>

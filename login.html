@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Twister | Sign in</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="headliner">Twister</a>
+    </div>
+    <div class="login_reg">
+        <p class="name">Вход</p>
+        <div class="eyes">
+            <img src="images/login/eyes_open.png" alt="" id="photo">
+        </div>
+        <div class="formLogin chang">
+            <label>
+                <input type="text" placeholder="Введите свой логин" class="log login" id="login_login" onmouseleave="stock()">
+            </label>
+            <label>
+                <input type="password" placeholder="Введите свой пароль" class="log password" id="password_login">
+            </label>
+            <button class="confirmLogin" onClick="checkData()">Вход</button>
+            <div class="logoreg" onClick="changan(1)">Зарегистрироваться?</div>
+        </div>
+        <div class="passLogin chang disable">
+            <label>
+                <input type="text" placeholder="Придумайте свой логин" class="log login" id="login_registr" onmouseleave="stock()">
+            </label>
+            <label>
+                <input type="password" placeholder="Придумайте свой пароль" class="log password" id="password_registr">
+            </label>
+            <button class="confirmRegistr" onClick="saveData()">Регистрация</button>
+            <div class="logoreg" onClick="changan(2)">Войти?</div>
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 9vw">
+        <div class="footer_wrap">
+            <div class="footer_element">
+                <h2>Навигация по сайту</h2>
+                <a href="index.html">Главная</a>
+                <a href="login.html?login=false">Зарегистрироваться</a>
+                <a href="tracked.html">Отслеживаемое</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer_element">
+                <h2>Юридическая информация</h2>
+                <a href="https://www.twitch.tv/p/legal/community-guidelines">Правила сообщества</a>
+                <a href="https://www.twitch.tv/p/legal/privacy-policy">Политика конфиденциальности</a>
+                <a href="https://www.twitch.tv/p/partners">Партнеры</a>
+                <a href="https://twitchadvertising.tv/">Рекламодатели</a>
+            </div>
+        </div>
+        <div class="law">
+            <p>© 2025 Twister. Все права защищены.</p>
+        </div>
+        <img class="top" src="images/main/toTop.png" alt="toTop">
+    </div>
+</body>
+<script src="js/eyesLogin.js"></script>
+<script src="js/login.js"></script>
+<script src="js/eyesReg.js"></script>
+<script src="js/changeOn.js"></script>
+<script src="js/toTop.js"></script>
+</html>

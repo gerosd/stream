@@ -1,0 +1,137 @@
+@import url("forAll.css");
+
+@keyframes slidein {
+    0% {
+        margin-left: 50%;
+    }
+
+    100% {
+        margin-left: 1.0938vw;
+    }
+}
+
+@keyframes slideinlogin {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 10.7813vw;
+    }
+}
+
+.header {
+    width: 100%;
+    margin-top: 1.0938vw;
+}
+
+.headliner {
+    color: var(--text-color-black);
+    margin-left: 1.0938vw;
+    font-size: clamp(18px, 2vw, 36px);
+    font-family: "Glutens", serif;
+    animation: slidein 1s;
+}
+
+.login_reg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50.5208vw;
+    height: 29.9479vw;
+    margin: 10.7813vw auto 0 auto;
+    background: #627891;
+    border-radius: 1.3021vw;
+    animation: slideinlogin 1s;
+}
+
+.name {
+    text-align: center;
+    color: var(--text-color-white);
+    height: 1.8750vw;
+    width: 100%;
+    font-size: clamp(10px, 2vw, 36px);
+}
+
+.eyes {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#photo {
+    width: 4.1146vw;
+}
+
+.chang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chang > * {
+    box-sizing: border-box;
+}
+
+.confirmLogin, .confirmRegistr {
+    letter-spacing: 0.64px;
+    font-size: clamp(12px, 2vw, 48px);
+    background-color: #632024;
+    cursor: pointer;
+    color: var(--text-color-white);
+    border: none;
+    border-radius: 0.7813vw;
+    width: fit-content;
+    padding: 0.3vw 4vw;
+    height: 4.0625vw;
+    margin-top: 3.5417vw;
+    transition: .2s;
+}
+
+.confirmLogin:hover, .confirmRegistr:hover {
+    background-color: #541518;
+    color: white;
+}
+
+.log {
+    font-family: Inter, sans-serif;
+    font-size: clamp(6px, 1.5vw, 24px);
+    letter-spacing: 0.64px;
+    color: var(--text-color-black);
+    width: 29.0104vw;
+    height: 1.8229vw;
+    padding-left: 0.4167vw;
+    border-radius: 0.7813vw;
+    border: none;
+    outline: none;
+}
+
+.password {
+    margin-top: 2.9688vw;
+}
+
+.log::placeholder {
+    font-family: Inter, sans-serif;
+    font-size: clamp(6px, 1.5vw, 24px);
+    letter-spacing: 0.64px;
+    color: var(--text-color-black);
+}
+
+.disable {
+    display: none;
+}
+
+.logoreg {
+    cursor: pointer;
+    user-select: none;
+    color: var(--text-color-white); 
+    margin-top: 1vw;
+    font-size: clamp(8px, 1.5vw, 16px);
+}
+
+.changeColor {
+    background: #353534 !important;
+}
