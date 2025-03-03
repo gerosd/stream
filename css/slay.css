@@ -155,7 +155,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-image: url(/images/slay/border.svg) 1 fill;
+    border-image: url('/images/slay/border.svg') 1 fill;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
